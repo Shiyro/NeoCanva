@@ -6,11 +6,11 @@ RGB_MATRIX_INSTALL_SCRIPT_URL="rgb-matrix-install.sh"
 echo -e "\e[33mUpdating package list...\e[0m"
 sudo apt-get update
 
-# Install build-essential and expect
-echo -e "\e[33mInstalling build-essential and expect...\e[0m"
-sudo apt-get install -y build-essential expect
+# Install dependencies
+echo -e "\e[33mInstalling dependencies...\e[0m"
+sudo apt-get install -y build-essential expect libgraphicsmagick++-dev libwebp-dev
 
-# Install python3-dev
+# Install python3
 echo -e "\e[33mInstalling python...\e[0m"
 sudo apt-get install -y python3-dev python3-aiohttp
 
